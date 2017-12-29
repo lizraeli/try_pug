@@ -6,7 +6,16 @@ module.exports = {
   entry: "./src/index.ts",
   plugins: [
     new CleanWebpackPlugin(["dist"]),
-    new CopyWebpackPlugin(["src/"], { ignore: ["*.js", "*.ts"] })
+    new CopyWebpackPlugin(["src/"], {
+      ignore: [
+        "*.js",
+        "*.ts",
+        {
+          dot: "true",
+          glob: "semantic/**/*"
+        }
+      ]
+    })
   ],
   output: {
     filename: "bundle.js",
