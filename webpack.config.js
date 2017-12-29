@@ -6,16 +6,15 @@ module.exports = {
   entry: "./src/index.ts",
   plugins: [
     new CleanWebpackPlugin(["dist"]),
-    new CopyWebpackPlugin(["src/"], {
-      ignore: [
-        "*.js",
-        "*.ts",
-        {
-          dot: "true",
-          glob: "semantic/**/*"
-        }
-      ]
-    })
+    new CopyWebpackPlugin([
+      "src/index.html",
+      { from: "src/icons/", to: "icons/" },
+      "src/browserconfig.xml",
+      "src/codemirror.min.css",
+      "src/semantic.min.css",
+      "src/sw.js",
+      "src/manifest.json"
+    ])
   ],
   output: {
     filename: "bundle.js",
