@@ -1,0 +1,32 @@
+{
+  "name": "pug-repl",
+  "version": "1.0.0",
+  "description": "A Pug Repl With JSON Input for variables",
+  "keywords": [],
+  "author": "Lev Izraelit",
+  "license": "ISC",
+  "main": "index.ts",
+  "scripts": {
+    "build": "webpack --config webpack.config.js"
+  },
+  "devDependencies": {
+    "clean-webpack-plugin": "^0.1.17",
+    "copy-webpack-plugin": "^4.3.1",
+    "ts-loader": "^3.2.0",
+    "typescript": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "webpack": "^3.9.1",
+    "webpack-dev-server": "^2.9.5"
+  },
+  "dependencies": {
+    "@types/codemirror": "0.0.53",
+    "@types/lodash": "^4.14.86",
+    "@types/pug": "^2.0.4",
+    "codemirror": "^5.33.0",
+    "html2pug": "^2.0.1",
+    "lodash": "^4.17.4",
+    "pug": "^2.0.0-rc.4",
+    "rxjs": "^5.5.6",
+    "semantic-ui": "^2.2.13"
+  }
+}
