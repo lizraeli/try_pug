@@ -8,12 +8,10 @@ module.exports = {
     new CleanWebpackPlugin(["dist"]),
     new CopyWebpackPlugin([
       "src/index.html",
-      { from: "src/icons/", to: "icons/" },
       "src/browserconfig.xml",
-      "src/codemirror.min.css",
-      "src/semantic.min.css",
-      "src/sw.js",
-      "src/manifest.json"
+      { from: "src/icons/", to: "icons/" },
+      { from: "src/css/", to: "css/" },
+      { from: "src/config/", to: "config/" }
     ])
   ],
   output: {

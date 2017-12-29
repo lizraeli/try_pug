@@ -11,9 +11,9 @@ import "rxjs/add/observable/concat";
 
 // local imports
 import codeLibrary from "./pug-library";
-import { stripIndent } from "./indent";
-import betterTab from "./betterTab";
-import pug from "./pug";
+import { stripIndent } from "./util/indent";
+import betterTab from "./util/betterTab";
+import pug from "./modules/pug";
 
 // type defintions
 import { Options, LocalsObject } from "pug";
